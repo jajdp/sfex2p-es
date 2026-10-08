@@ -7,6 +7,18 @@
 You need a PSXRecomp project for Street Fighter EX2 Plus that already runs on your machine,
 and your own dump of the NTSC-U disc.
 
+If you do not have the game running yet, that part comes from
+[strider973/Street-Fighter-EX2-Plus-Recompiled](https://github.com/strider973/Street-Fighter-EX2-Plus-Recompiled),
+built on the [PSXRecomp](https://github.com/RetroPortingToolKit/psxrecomp) framework. Two things
+it needs that this mod cannot provide:
+
+- **your own disc dump** (`.cue` / `.bin`), and
+- **a retail SCPH-1001 BIOS** — that project sets `openbios = false`, so the bundled OpenBIOS
+  will not do.
+
+Get the game itself booting first; then come back here. Installing this package is the last
+step, not the first.
+
 The package is bound to that dump. Check yours before anything else:
 
 ```
@@ -34,7 +46,16 @@ Copy the folder so that this file ends up next to the game executable:
 ```
 
 That is all: there is nothing to build and nothing to generate. Do not rename the folders —
-the package id and version are the path.
+the package id and version **are** the path, and a renamed folder makes the runtime reject the
+whole catalogue, not just this package (`mods unavailable: package path does not match
+manifest id/version`).
+
+**If you build the game from source**, copy the package in **after** the build, into
+`build-*/mods/packages/`. The framework stages its own built-in catalogue there and clears that
+folder first, so a package copied in beforehand is wiped. (With
+[sfex2p-widescreen](https://github.com/jajdp/sfex2p-widescreen) installed you can instead keep
+the package in the project's own `mods/packages/`: its installer adds a post-build step that
+stages that folder next to the executable, after the catalogue is written.)
 
 ## 2. Turn it on
 
@@ -78,6 +99,8 @@ application package version is what updates the translation.
 | Symptom | Cause |
 |---|---|
 | The feature does not appear in the launcher | The package is not next to the executable, or the folders were renamed. The path must be exactly `mods/packages/sfex2p.es/1.0.0/manifest.toml`. |
-| It appears but cannot be enabled, or the game refuses to launch | The disc digest does not match `disc_sha256`. Different dump, different revision or a different region: this package is NTSC-U `SLUS-01105` only. |
+| `mods unavailable: package path does not match manifest id/version` | A package folder was renamed. This rejects **every** mod, not just the renamed one. Restore the original name. |
+| `cannot launch with selected mods: package does not target this game/image: sfex2p.es` | The game is not running **your** image. Either the dump is not the NTSC-U `SLUS-01105` this package targets, or the game is pointed at a different file: pick your disc in the launcher once (it is remembered), or set `disc` in `game.toml` to your `.cue`. Booting with `--no-launcher` resolves mods *before* a `--disc` on the command line, so the path in `game.toml` is what counts there. |
+| It appears but cannot be enabled | The disc digest does not match `disc_sha256`: different dump, revision or region. This package is NTSC-U `SLUS-01105` only. |
 | Menus are Spanish but one screen is English | Either it is deliberate (proper nouns and drawn artwork stay English) or it is a screen that has not been walked through yet — the arcade endings are known to be unchecked. Reports welcome. |
 | Accented characters missing in menus | Deliberate: the menu font has no accents and no `ñ`. The memory-card font does, and uses them. |

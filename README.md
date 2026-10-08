@@ -1,7 +1,7 @@
 # Street Fighter EX2 Plus — Spanish menus
 
 A Spanish localization of *Street Fighter EX2 Plus* (PlayStation, 1999, `SLUS-01105`) for the
-[PSXRecomp](https://github.com/mstan) static recompilation, shipped as a **declarative mod
+[PSXRecomp](https://github.com/RetroPortingToolKit/psxrecomp) static recompilation, shipped as a **declarative mod
 package**: 302 strings, 979 guarded patches, no modified disc image and no patched executable.
 It switches on and off in the launcher.
 
@@ -73,8 +73,14 @@ including consoles, in **[docs/INSTALL.md](docs/INSTALL.md)**.
 
 ## Status
 
-Played through on Windows and on an Xbox Series in Developer Mode, screen by screen. Known
-gaps: the arcade endings have not been walked through yet, so English text may remain there.
+Played through on Windows and on an Xbox Series in Developer Mode, screen by screen.
+
+Also verified from scratch on 2026-10-08, using nothing but this repository and the game's own:
+the game built from source, this package dropped in, and the title screen reading **PULSA
+START** on first boot.
+
+Known gaps: the arcade endings have not been walked through yet, so English text may remain
+there.
 
 ## Credits and license
 

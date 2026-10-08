@@ -7,6 +7,18 @@
 Hace falta un proyecto PSXRecomp de Street Fighter EX2 Plus que ya funcione en tu máquina, y
 tu propio volcado del disco NTSC-U.
 
+Si todavía no tienes el juego funcionando, esa parte sale de
+[strider973/Street-Fighter-EX2-Plus-Recompiled](https://github.com/strider973/Street-Fighter-EX2-Plus-Recompiled),
+construido sobre el framework [PSXRecomp](https://github.com/RetroPortingToolKit/psxrecomp). Dos
+cosas que ese proyecto necesita y que este mod no puede darte:
+
+- **tu propio volcado del disco** (`.cue` / `.bin`), y
+- **una BIOS retail SCPH-1001** — ese proyecto va con `openbios = false`, así que la OpenBIOS que
+  viene incluida no sirve.
+
+Primero el juego arrancando; después vuelve aquí. Instalar este paquete es el último paso, no
+el primero.
+
 El paquete está atado a ese volcado. Comprueba el tuyo antes que nada:
 
 ```
@@ -34,7 +46,16 @@ Copia la carpeta de modo que este archivo quede junto al ejecutable del juego:
 ```
 
 Y ya está: no hay nada que compilar ni que generar. No cambies el nombre de las carpetas: el
-id y la versión del paquete **son** la ruta.
+id y la versión del paquete **son** la ruta, y una carpeta renombrada hace que el runtime
+rechace **todo** el catálogo, no solo ese paquete (`mods unavailable: package path does not
+match manifest id/version`).
+
+**Si compilas el juego desde el código fuente**, copia el paquete **después** de compilar, en
+`build-*/mods/packages/`. El framework deja ahí su propio catálogo y limpia esa carpeta antes,
+así que lo que copies antes de compilar se pierde. (Con
+[sfex2p-widescreen](https://github.com/jajdp/sfex2p-widescreen) instalado puedes, en cambio,
+guardar el paquete en el `mods/packages/` del propio proyecto: su instalador añade un paso
+posterior a la compilación que copia esa carpeta junto al ejecutable, después del catálogo.)
 
 ## 2. Encenderlo
 
@@ -79,6 +100,8 @@ instala una versión nueva del paquete de la aplicación.
 | Síntoma | Causa |
 |---|---|
 | La opción no aparece en el lanzador | El paquete no está junto al ejecutable, o le cambiaron el nombre a alguna carpeta. La ruta tiene que ser exactamente `mods/packages/sfex2p.es/1.0.0/manifest.toml`. |
-| Aparece pero no se deja encender, o el juego no arranca | La huella del disco no coincide con `disc_sha256`. Otro volcado, otra revisión u otra región: este paquete es solo para el NTSC-U `SLUS-01105`. |
+| `mods unavailable: package path does not match manifest id/version` | Se renombró la carpeta de un paquete. Eso tumba **todos** los mods, no solo el renombrado. Devuélvele su nombre. |
+| `cannot launch with selected mods: package does not target this game/image: sfex2p.es` | El juego no está usando **tu** imagen. O el volcado no es el NTSC-U `SLUS-01105` al que apunta el paquete, o el juego está mirando otro archivo: elige tu disco una vez en el lanzador (se recuerda) o pon tu `.cue` en `disc` dentro de `game.toml`. Arrancando con `--no-launcher`, los mods se resuelven **antes** que el `--disc` de la línea de comandos, así que ahí manda la ruta del `game.toml`. |
+| Aparece pero no se deja encender | La huella del disco no coincide con `disc_sha256`: otro volcado, otra revisión u otra región. Este paquete es solo para el NTSC-U `SLUS-01105`. |
 | Los menús están en español pero una pantalla sigue en inglés | O es a propósito (los nombres propios y los rótulos dibujados se quedan en inglés) o es una pantalla que no se recorrió: los finales del arcade están sin revisar. Se agradece el aviso. |
 | Faltan tildes en los menús | Es a propósito: la letra de los menús no tiene tildes ni eñe. La de la tarjeta de memoria sí, y las usa. |

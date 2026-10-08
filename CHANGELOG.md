@@ -25,3 +25,14 @@ Mode.
 - Fighter, stage, music and move names stay in English, as does the drawn scoreboard jargon
   and **CP** for the CPU side. See [docs/TRANSLATION.es.md](docs/TRANSLATION.es.md).
 - The arcade endings have not been walked through: English text may remain there.
+
+### Documentation, same day
+
+Verified from scratch on a clean machine — game cloned and built from source, disc and BIOS
+supplied by the tester, package installed from this repository alone — and the install guide
+corrected with what that run exposed:
+
+- where the game project itself comes from, and that it requires a retail SCPH-1001 BIOS;
+- what `package does not target this game/image` actually means, and how to fix it;
+- that renaming a package folder rejects the whole mod catalogue, not just that package;
+- where the package goes when the game is built from source.

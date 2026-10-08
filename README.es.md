@@ -1,7 +1,7 @@
 # Street Fighter EX2 Plus en español
 
 Traducción al español de *Street Fighter EX2 Plus* (PlayStation, 1999, `SLUS-01105`) para la
-recompilación estática [PSXRecomp](https://github.com/mstan). Va como **paquete de mods
+recompilación estática [PSXRecomp](https://github.com/RetroPortingToolKit/psxrecomp). Va como **paquete de mods
 declarativo**: 302 textos, 979 parches comprobados, sin tocar la imagen del disco y sin
 ejecutable parcheado. Se enciende y se apaga en el lanzador.
 
@@ -76,8 +76,14 @@ y en consolas, en **[docs/INSTALL.es.md](docs/INSTALL.es.md)**.
 
 ## Estado
 
-Recorrido pantalla por pantalla en Windows y en una Xbox Series en modo desarrollador. Lo que
-falta: los finales del arcade, que no se han recorrido y donde puede quedar texto en inglés.
+Recorrido pantalla por pantalla en Windows y en una Xbox Series en modo desarrollador.
+
+Comprobado además desde cero el 2026-10-08, sin usar nada más que este repositorio y el del
+propio juego: juego compilado desde el código fuente, este paquete copiado dentro y el título
+diciendo **PULSA START** al primer arranque.
+
+Lo que falta: los finales del arcade, que no se han recorrido y donde puede quedar texto en
+inglés.
 
 ## Créditos y licencia
 
