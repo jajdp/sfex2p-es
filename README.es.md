@@ -57,14 +57,17 @@ parche: los bytes que cambian y los bytes que cada cambio espera encontrar.
 
 ## Instalación
 
-Se copia la carpeta del paquete al proyecto del juego, junto al ejecutable:
+Se descarga la **[última versión publicada](https://github.com/jajdp/sfex2p-es/releases/latest)**
+y se descomprime en el proyecto del juego, junto al ejecutable. El archivo ya trae la
+estructura de carpetas, así que con eso queda instalado:
 
 ```
 mods/packages/sfex2p.es/1.0.0/manifest.toml
 ```
 
-Se arranca el juego y se enciende **Menú en español** en **Mods → Localization**. Paso a paso,
-y en consolas, en **[docs/INSTALL.es.md](docs/INSTALL.es.md)**.
+Copiar esa misma carpeta directamente de este repositorio vale igual: es el mismo archivo.
+Después se arranca el juego y se enciende **Menú en español** en **Mods → Localization**. Paso
+a paso, y en consolas, en **[docs/INSTALL.es.md](docs/INSTALL.es.md)**.
 
 ![La lista de Mods del lanzador](docs/images/pc-lanzador-mods.png)
 

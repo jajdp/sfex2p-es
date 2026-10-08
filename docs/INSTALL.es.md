@@ -39,7 +39,17 @@ Si tu huella es otra, el mod no se aplicará. Mira *Si algo no sale bien*, más 
 
 ## 1. Copiar el paquete
 
-Copia la carpeta de modo que este archivo quede junto al ejecutable del juego:
+Hay dos caminos, y los dos instalan el mismo archivo:
+
+- **Desde la versión publicada.** Descarga `sfex2p.es-1.0.0.zip` de
+  [la página de releases](https://github.com/jajdp/sfex2p-es/releases/latest) y descomprímelo
+  en la carpeta donde está el ejecutable del juego: el archivo trae dentro la ruta
+  `mods/packages/…`, así que al descomprimirlo ahí el paquete queda en su sitio. Deja también
+  dos archivos sueltos `sfex2p.es-1.0.0-*.txt` —una guía corta y la licencia— que puedes
+  borrar.
+- **Desde este repositorio.** Copia la carpeta `mods/` de un clon, o de *Code → Download ZIP*.
+
+De una forma o de la otra, este archivo tiene que quedar junto al ejecutable del juego:
 
 ```
 <carpeta del juego>/mods/packages/sfex2p.es/1.0.0/manifest.toml

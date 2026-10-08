@@ -54,14 +54,17 @@ patch: the bytes to change and the bytes each change expects to find.
 
 ## Install
 
-Copy the package folder into your game project, next to the executable:
+Download the **[latest release](https://github.com/jajdp/sfex2p-es/releases/latest)** and
+extract it into your game project, next to the executable. The archive already carries the
+folder structure, so that is the whole install:
 
 ```
 mods/packages/sfex2p.es/1.0.0/manifest.toml
 ```
 
-Launch the game and enable **Menú en español** under **Mods → Localization**. Step by step,
-including consoles, in **[docs/INSTALL.md](docs/INSTALL.md)**.
+Copying that same folder straight out of this repository works just as well — it is the same
+file. Then launch the game and enable **Menú en español** under **Mods → Localization**. Step
+by step, including consoles, in **[docs/INSTALL.md](docs/INSTALL.md)**.
 
 ![The launcher's Mods list](docs/images/pc-lanzador-mods.png)
 

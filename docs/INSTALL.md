@@ -39,7 +39,17 @@ If your digest differs, the mod will refuse to apply. See *If something looks wr
 
 ## 1. Copy the package
 
-Copy the folder so that this file ends up next to the game executable:
+Two ways in, and both install the same file:
+
+- **From the release.** Download `sfex2p.es-1.0.0.zip` from
+  [the releases page](https://github.com/jajdp/sfex2p-es/releases/latest) and extract it into
+  the folder that holds the game executable: the archive carries the `mods/packages/…` path
+  inside, so extracting it there puts the package where it belongs. It also drops two loose
+  `sfex2p.es-1.0.0-*.txt` files — a short guide and the license — which you can delete.
+- **From this repository.** Copy the `mods/` folder out of a clone, or out of *Code → Download
+  ZIP*.
+
+Either way, this file has to end up next to the game executable:
 
 ```
 <game folder>/mods/packages/sfex2p.es/1.0.0/manifest.toml
