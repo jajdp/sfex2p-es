@@ -35,9 +35,12 @@ audio.
 El paquete guarda además el **SHA-256** del disco, que es una huella y no contenido, y es lo
 que ata cada parche a la edición correcta del juego.
 
-Las capturas de `docs/images/` muestran el juego en marcha, para documentar qué cambia el mod y
-para que cualquiera pueda comparar su propia instalación con ellas. Siguen siendo propiedad de
-sus respectivos titulares.
+Las capturas de `docs/images/` están para documentar **qué cambia el mod**: todas enseñan
+interfaz traducida, que es el trabajo, y el arte del juego es el fondo sobre el que
+inevitablemente va. La regla que se aplica es que una captura se gana su sitio enseñando el
+trabajo, así que la pantalla de título —que es sobre todo el logotipo y la marca de Capcom y no
+enseña nada que haya hecho este mod— no está. Lo que queda sigue siendo propiedad de sus
+respectivos titulares.
 
 ## Retirada y contacto
 

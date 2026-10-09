@@ -32,9 +32,11 @@ refuse to apply to the wrong dump instead of corrupting it. Those quoted bytes c
 The package also records the disc's **SHA-256**, which is a fingerprint rather than content,
 and is what binds each patch to the correct edition of the game.
 
-The screenshots under `docs/images/` show the game running, in order to document what the mod
-changes and to let someone check their own install against it. They remain the property of
-their respective owners.
+The screenshots under `docs/images/` are here to document **what the mod changes**: every one of
+them shows translated interface, which is the work itself, and the game's art is the background
+it unavoidably sits on. The rule applied is that a screenshot earns its place by showing the
+work — so the title screen, which is mostly Capcom's logo and trademark and shows nothing this
+mod did, is not here. What remains is still the property of its respective owners.
 
 ## Takedown and contact
 
