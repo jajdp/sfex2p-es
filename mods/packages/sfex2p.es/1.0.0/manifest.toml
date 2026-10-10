@@ -1,10 +1,14 @@
 # Street Fighter EX2 Plus — Spanish menus (sfex2p.es)
 # https://github.com/jajdp/sfex2p-es
 #
-# Generated file, 979 guarded patches: do not edit by hand. Every patch states the original
-# bytes it expects, so the package refuses to apply to anything but the disc it was built
-# for, and nothing is overwritten blindly. The stock disc image is never modified: the
-# runtime resolves these into a sparse overlay at load time.
+# Generated file, 979 guarded patches: do not edit by hand. It is produced by the generator that
+# lives in the private project where the translation is written and maintained, which is why it is
+# not in this repository: what gets published is the patch, not the factory. Corrections to the
+# wording are welcome as issues — see docs/TRANSLATION.es.md.
+#
+# Every patch states the original bytes it expects, so the package refuses to apply to anything but
+# the disc it was built for, and nothing is overwritten blindly. The stock disc image is never
+# modified: the runtime resolves these into a sparse overlay at load time.
 format_version = 5
 id = "sfex2p.es"
 version = "1.0.0"

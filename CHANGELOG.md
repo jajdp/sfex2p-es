@@ -2,6 +2,24 @@
 
 All notable changes to this mod. Dates are `YYYY-MM-DD`.
 
+## [1.0.1] — 2026-10-10
+
+A code-review pass over the three repositories of this project. Nothing about the translation
+itself changed: the 979 patches are byte for byte what 1.0.0 shipped.
+
+### Changed
+
+- `LICENSE` now carries the **canonical** PolyForm Noncommercial 1.0.0 text from
+  polyformproject.org — the one the `PolyForm-Noncommercial-1.0.0` identifier names. The copy
+  shipped before was an abridged variant missing *Distribution License*, *Notices*, *Changes and
+  New Works License* and *Patent License*, which are the sections that grant a recipient the right
+  to share and build on this.
+- The manifest's header now says where the file comes from, that the generator stays in the
+  private project, and how to ask for a wording change.
+- One shared `.gitignore` across the three repositories, with the strictest protection of the
+  three. The two mod repositories were missing `*.BIN` and `SCPH*` — the BIOS — which Windows
+  hides because git matches case-insensitively there, but a clone on Linux does not.
+
 ## [1.0.0] — 2026-10-08
 
 First public release: 302 strings, 979 guarded patches (938 to the disc, 41 to the
