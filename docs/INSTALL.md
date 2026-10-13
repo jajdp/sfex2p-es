@@ -19,19 +19,26 @@ it needs that this mod cannot provide:
 Get the game itself booting first; then come back here. Installing this package is the last
 step, not the first.
 
-The package is bound to that dump. Check yours before anything else:
+The package is bound to that dump, so checking yours comes first. It has to give exactly this
+hash:
 
-```
+```text
 SHA-256  f12ab8cb7a7af9599fe805f3c1405a051f22810305d2005b107c042316aa936f
 ```
 
+To get it, open a terminal in the folder where your `.bin` is and type one of these two,
+depending on your system.
+
+On **Windows**: press the Windows key, type `powershell`, press Enter, then go to that folder
+with `cd "<the path>"`. Then:
+
 ```powershell
-# Windows
 certutil -hashfile "Street Fighter EX2 Plus (USA).bin" SHA256
 ```
 
+On **Linux or macOS**, in any terminal, from that same folder:
+
 ```sh
-# Linux / macOS
 sha256sum "Street Fighter EX2 Plus (USA).bin"
 ```
 
@@ -51,7 +58,7 @@ Two ways in, and both install the same file:
 
 Either way, this file has to end up next to the game executable:
 
-```
+```text
 <game folder>/mods/packages/sfex2p.es/1.0.0/manifest.toml
 ```
 

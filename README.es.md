@@ -61,7 +61,7 @@ Se descarga la **[última versión publicada](https://github.com/jajdp/sfex2p-es
 y se descomprime en el proyecto del juego, junto al ejecutable. El archivo ya trae la
 estructura de carpetas, así que con eso queda instalado:
 
-```
+```text
 mods/packages/sfex2p.es/1.0.0/manifest.toml
 ```
 

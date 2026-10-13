@@ -58,7 +58,7 @@ Download the **[latest release](https://github.com/jajdp/sfex2p-es/releases/late
 extract it into your game project, next to the executable. The archive already carries the
 folder structure, so that is the whole install:
 
-```
+```text
 mods/packages/sfex2p.es/1.0.0/manifest.toml
 ```
 

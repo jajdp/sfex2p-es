@@ -2,6 +2,19 @@
 
 All notable changes to this mod. Dates are `YYYY-MM-DD`.
 
+## [Unreleased]
+
+### Added
+
+- **Every command block now says where to type it.** The guides were written as if the reader
+  already knew to open a terminal, which folder to be in, and that a block starting with `$` is
+  PowerShell. None of that is obvious if this is not your trade. Each block now names its terminal
+  and the folder it runs from, and blocks that are *output* rather than commands are marked as
+  such, so there is no guessing about what you are supposed to type.
+- **It is spelled out that administrator is not needed — and that using it breaks one step.** The
+  certificate is created in the store of whichever user runs the command, so creating it in an
+  elevated window puts it where `signtool`, running as you, will not find it.
+
 ## [1.0.1] — 2026-10-10
 
 A code-review pass over the three repositories of this project. Nothing about the translation

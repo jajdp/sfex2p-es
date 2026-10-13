@@ -19,19 +19,26 @@ cosas que ese proyecto necesita y que este mod no puede darte:
 Primero el juego arrancando; después vuelve aquí. Instalar este paquete es el último paso, no
 el primero.
 
-El paquete está atado a ese volcado. Comprueba el tuyo antes que nada:
+El paquete está atado a ese volcado, así que lo primero es comprobar el tuyo. Tiene que dar
+exactamente esta huella:
 
-```
+```text
 SHA-256  f12ab8cb7a7af9599fe805f3c1405a051f22810305d2005b107c042316aa936f
 ```
 
+Para sacarla, abre una terminal en la carpeta donde tengas el `.bin` y escribe una de estas
+dos, según tu sistema.
+
+En **Windows**: pulsa la tecla Windows, escribe `powershell`, pulsa Enter, y ve a esa carpeta
+con `cd "<la ruta>"`. Después:
+
 ```powershell
-# Windows
 certutil -hashfile "Street Fighter EX2 Plus (USA).bin" SHA256
 ```
 
+En **Linux o macOS**, en cualquier terminal, desde esa misma carpeta:
+
 ```sh
-# Linux / macOS
 sha256sum "Street Fighter EX2 Plus (USA).bin"
 ```
 
@@ -51,7 +58,7 @@ Hay dos caminos, y los dos instalan el mismo archivo:
 
 De una forma o de la otra, este archivo tiene que quedar junto al ejecutable del juego:
 
-```
+```text
 <carpeta del juego>/mods/packages/sfex2p.es/1.0.0/manifest.toml
 ```
 
