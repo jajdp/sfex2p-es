@@ -26,17 +26,19 @@ hash:
 SHA-256  f12ab8cb7a7af9599fe805f3c1405a051f22810305d2005b107c042316aa936f
 ```
 
-To get it, open a terminal in the folder where your `.bin` is and type one of these two,
-depending on your system.
+To get it, one of these two, depending on your system.
 
-On **Windows**: press the Windows key, type `powershell`, press Enter, then go to that folder
-with `cd "<the path>"`. Then:
+> **Where to type this:** in **PowerShell** — press the **Windows** key, type `powershell` and
+> press **Enter** — in an **ordinary** window: you do not need "run as administrator", from the
+> folder where your `.bin` dump is.
 
 ```powershell
 certutil -hashfile "Street Fighter EX2 Plus (USA).bin" SHA256
 ```
 
-On **Linux or macOS**, in any terminal, from that same folder:
+> **Where to type this:** in a terminal: on **Windows**, PowerShell (press **Windows**, type
+> `powershell`, press **Enter**); on Linux or macOS, whichever you use. An **ordinary** window,
+> no administrator, from the folder where your `.bin` dump is.
 
 ```sh
 sha256sum "Street Fighter EX2 Plus (USA).bin"

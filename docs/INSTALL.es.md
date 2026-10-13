@@ -26,17 +26,19 @@ exactamente esta huella:
 SHA-256  f12ab8cb7a7af9599fe805f3c1405a051f22810305d2005b107c042316aa936f
 ```
 
-Para sacarla, abre una terminal en la carpeta donde tengas el `.bin` y escribe una de estas
-dos, según tu sistema.
+Para sacarla, una de estas dos según tu sistema.
 
-En **Windows**: pulsa la tecla Windows, escribe `powershell`, pulsa Enter, y ve a esa carpeta
-con `cd "<la ruta>"`. Después:
+> **Dónde se escribe:** en **PowerShell** —pulsa la tecla **Windows**, escribe `powershell` y
+> pulsa **Enter**—, en una ventana **normal**: no hace falta «ejecutar como administrador»,
+> desde la carpeta donde tengas tu volcado `.bin`.
 
 ```powershell
 certutil -hashfile "Street Fighter EX2 Plus (USA).bin" SHA256
 ```
 
-En **Linux o macOS**, en cualquier terminal, desde esa misma carpeta:
+> **Dónde se escribe:** en una terminal: en **Windows**, PowerShell (tecla **Windows**, escribe
+> `powershell`, **Enter**); en Linux o macOS, la que uses. En una ventana **normal**, sin
+> administrador, desde la carpeta donde tengas tu volcado `.bin`.
 
 ```sh
 sha256sum "Street Fighter EX2 Plus (USA).bin"
