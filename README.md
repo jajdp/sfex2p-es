@@ -9,6 +9,9 @@ It switches on and off in the launcher.
 
 ![The main menu in Spanish](docs/images/pc-menu-es.png)
 
+> **Where it was tested:** on Windows, and on an **Xbox Series X** in Developer Mode through the UWP
+> port of this game. A Series S has **never** been tried — nothing here has been measured on one.
+
 ## What is translated
 
 - Title and loading screens, the main menu and its submenus, game and sound options, the
@@ -76,7 +79,7 @@ by step, including consoles, in **[docs/INSTALL.md](docs/INSTALL.md)**.
 
 ## Status
 
-Played through on Windows and on an Xbox Series in Developer Mode, screen by screen.
+Played through on Windows and on an Xbox Series X in Developer Mode, screen by screen.
 
 Also verified from scratch on 2026-10-08, using nothing but this repository and the game's own:
 the game built from source, this package dropped in, and the title screen reading **PULSA

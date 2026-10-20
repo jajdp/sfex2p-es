@@ -2,6 +2,15 @@
 
 All notable changes to this mod. Dates are `YYYY-MM-DD`.
 
+## [1.0.3] — 2026-10-20
+
+### Changed
+
+- **The README now says which console this was tested on, and which one it was not.** This mod was
+  played on Windows and on an **Xbox Series X** in Developer Mode, through the UWP port of this game; a
+  **Series S has never been tried**, so nothing here says anything about one. The wording used to say
+  "Xbox Series", which reads as if it covered both, and it does not.
+
 ## [1.0.2] — 2026-10-13
 
 ### Added
@@ -35,7 +44,7 @@ itself changed: the 979 patches are byte for byte what 1.0.0 shipped.
 ## [1.0.0] — 2026-10-08
 
 First public release: 302 strings, 979 guarded patches (938 to the disc, 41 to the
-executable). Walked through screen by screen on Windows and on an Xbox Series in Developer
+executable). Walked through screen by screen on Windows and on an Xbox Series X in Developer
 Mode.
 
 ### Added

@@ -9,6 +9,9 @@ ejecutable parcheado. Se enciende y se apaga en el lanzador.
 
 ![El menú principal en español](docs/images/pc-menu-es.png)
 
+> **Dónde se probó:** en Windows y en una **Xbox Series X** en modo desarrollador, a través del port
+> UWP de este juego. En una Series S **nunca** se ha probado: nada de aquí se ha medido en una.
+
 ## Qué está en español
 
 - El título y las cargas, el menú principal y sus submenús, las opciones de juego y de sonido,
@@ -79,7 +82,7 @@ a paso, y en consolas, en **[docs/INSTALL.es.md](docs/INSTALL.es.md)**.
 
 ## Estado
 
-Recorrido pantalla por pantalla en Windows y en una Xbox Series en modo desarrollador.
+Recorrido pantalla por pantalla en Windows y en una Xbox Series X en modo desarrollador.
 
 Comprobado además desde cero el 2026-10-08, sin usar nada más que este repositorio y el del
 propio juego: juego compilado desde el código fuente, este paquete copiado dentro y el título
