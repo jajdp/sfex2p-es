@@ -71,10 +71,9 @@ match manifest id/version`).
 
 **Si compilas el juego desde el código fuente**, copia el paquete **después** de compilar, en
 `build-*/mods/packages/`. El framework deja ahí su propio catálogo y limpia esa carpeta antes,
-así que lo que copies antes de compilar se pierde. (Con
-[sfex2p-widescreen](https://github.com/jajdp/sfex2p-widescreen) instalado puedes, en cambio,
-guardar el paquete en el `mods/packages/` del propio proyecto: su instalador añade un paso
-posterior a la compilación que copia esa carpeta junto al ejecutable, después del catálogo.)
+así que lo que copies antes de compilar se pierde. (Un mod cuyo instalador añada un paso
+posterior a la compilación —uno que copie `mods/packages/` junto al ejecutable *después* del
+catálogo— te permite, en cambio, guardar el paquete en la carpeta del propio proyecto.)
 
 ## 2. Encenderlo
 

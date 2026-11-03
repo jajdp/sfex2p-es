@@ -71,10 +71,9 @@ manifest id/version`).
 
 **If you build the game from source**, copy the package in **after** the build, into
 `build-*/mods/packages/`. The framework stages its own built-in catalogue there and clears that
-folder first, so a package copied in beforehand is wiped. (With
-[sfex2p-widescreen](https://github.com/jajdp/sfex2p-widescreen) installed you can instead keep
-the package in the project's own `mods/packages/`: its installer adds a post-build step that
-stages that folder next to the executable, after the catalogue is written.)
+folder first, so a package copied in beforehand is wiped. (A mod whose installer adds a
+post-build step — one that stages `mods/packages/` next to the executable *after* the catalogue is
+written — lets you keep the package in the project's own folder instead.)
 
 ## 2. Turn it on
 

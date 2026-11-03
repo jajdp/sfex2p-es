@@ -71,11 +71,10 @@ by step, including consoles, in **[docs/INSTALL.md](docs/INSTALL.md)**.
 
 ![The launcher's Mods list](docs/images/pc-lanzador-mods.png)
 
-## Related
+## Compatibility
 
-- [sfex2p-widescreen](https://github.com/jajdp/sfex2p-widescreen) — real 16:9 for the same
-  game, with the stage backdrop actually drawn out to the edges. Independent of this mod; they
-  work together.
+This mod only replaces menu text, so it does not get in the way of other mods for the same game —
+a 16:9 one among them. They can be installed together.
 
 ## Status
 

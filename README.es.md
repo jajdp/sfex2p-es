@@ -74,11 +74,10 @@ a paso, y en consolas, en **[docs/INSTALL.es.md](docs/INSTALL.es.md)**.
 
 ![La lista de Mods del lanzador](docs/images/pc-lanzador-mods.png)
 
-## Relacionado
+## Compatibilidad
 
-- [sfex2p-widescreen](https://github.com/jajdp/sfex2p-widescreen) — 16:9 de verdad para el
-  mismo juego, con el fondo del escenario dibujado hasta los bordes. Es independiente de este
-  mod; los dos funcionan a la vez.
+Este mod solo cambia el texto de los menús, así que no se pisa con otros mods del mismo juego —uno
+de 16:9, entre ellos—. Se pueden instalar a la vez.
 
 ## Estado
 
